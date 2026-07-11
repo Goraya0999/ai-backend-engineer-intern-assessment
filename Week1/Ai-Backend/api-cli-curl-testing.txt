@@ -1,0 +1,9 @@
+======================= Root Endpoint Testing =================
+curl http://127.0.0.1:8000/
+RESULT:  
+{"message":"this is Root"}
+
+======================= Home Endpoint Testing =================
+curl http://127.0.0.1:8000/home
+RESULT:  
+{"message":"Welcome to home"}
