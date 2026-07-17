@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Kit | Muhammad Shafiq Goraya</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Palette */
+            --bg-color: #FAFAFA; /* Near-white background */
+            --text-color: #0F172A; /* Near-black text (deep slate) */
+            --accent-color: #2563EB; /* Tech blue accent */
+            
+            /* Fonts */
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: #FFFFFF;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #E2E8F0;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #64748B;
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Logo styling */
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+            padding: 1rem;
+            background: #FFFFFF;
+        }
+
+        /* Typography styling */
+        .typography-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .font-card {
+            padding: 1.5rem;
+            background: var(--bg-color);
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+        }
+
+        .font-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .font-demo-heading {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin: 1rem 0;
+            line-height: 1.2;
+        }
+
+        .font-demo-body {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: #475569;
+        }
+
+        /* Palette styling */
+        .palette-grid {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .color-card {
+            flex: 1;
+            min-width: 150px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #E2E8F0;
+            background: #FFF;
+        }
+
+        .color-swatch {
+            height: 100px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .color-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .color-hex {
+            font-family: monospace;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+
+        /* Style Note */
+        .style-note {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 1.05rem;
+            color: #334155;
+        }
+        
+        .style-note-block {
+            margin-bottom: 1rem;
+        }
+        
+        .style-note-block:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .typography-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Identity Kit</h1>
+            <p class="subtitle">Muhammad Shafiq Goraya | AI Backend Engineer & Penetration Tester</p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">1. Logo / Brand Mark</h2>
+            <div class="logo-container">
+                <img src="logo.png" alt="Muhammad Shafiq Goraya Logo">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">2. Typography</h2>
+            <div class="typography-grid">
+                <div class="font-card">
+                    <div class="font-name" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Outfit</div>
+                    <div style="font-size: 0.85rem; color: #64748B; text-transform: uppercase; letter-spacing: 1px;">Heading Font</div>
+                    <div class="font-demo-heading">Secure APIs</div>
+                    <div class="font-demo-body">Used for titles, headers, and prominent UI elements to provide a modern, technical feel.</div>
+                </div>
+                <div class="font-card">
+                    <div class="font-name" style="font-family: 'Inter', sans-serif; font-weight: 600;">Inter</div>
+                    <div style="font-size: 0.85rem; color: #64748B; text-transform: uppercase; letter-spacing: 1px;">Body Font</div>
+                    <div class="font-demo-heading" style="font-family: 'Inter', sans-serif;">Clear Text</div>
+                    <div class="font-demo-body">Used for paragraphs, descriptions, and structural text. Highly legible across all devices.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">3. Color Palette</h2>
+            <div class="palette-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #0F172A;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Near Black</div>
+                        <div class="color-hex">#0F172A</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #FAFAFA; border-bottom: 1px solid #E2E8F0;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Near White</div>
+                        <div class="color-hex">#FAFAFA</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #2563EB;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Tech Blue (Accent)</div>
+                        <div class="color-hex">#2563EB</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #10B981;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Sec Green (Accent)</div>
+                        <div class="color-hex">#10B981</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">4. Style Note</h2>
+            <div class="style-note">
+                <div class="style-note-block"><strong>Fonts:</strong> Outfit (Headings) & Inter (Body). <strong>Colors:</strong> #0F172A, #FAFAFA, #2563EB, #10B981.</div>
+                <div class="style-note-block" style="font-style: italic;"><strong>Mood:</strong> A clean, technical aesthetic that conveys precision and security, keeping the interface calm so the engineering work speaks for itself.</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
